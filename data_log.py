@@ -15,7 +15,7 @@ class DataLog(object):
         """
             Creat's new log file, assign file name and type
             Parameters:
-                filename: name of log file, if 'default', it will create a name based on test number and mode
+                filename: name of log file
         """
         # check if log directory exists, if not create it
         try:
@@ -35,15 +35,15 @@ class DataLog(object):
 
         return
 
-    def print_log(self, test_results=None):
+    def print_log(self, task_results=None):
         """
             Prints header / results
         """
         # Create new print_line
         print_line = '\n'
-        # Appending test header/results line
-        if test_results is not None:
-            print_line += self.delimiter.join(test_results) + self.delimiter
+        # Appending task header/results line
+        if task_results is not None:
+            print_line += self.delimiter.join(task_results) + self.delimiter
 
         # If closed, reopen
         if self.fp.closed:
