@@ -1,6 +1,6 @@
 # Run it as follows:
 #    serial = SerialPort("COM10")
-#    cmd = serial.send_cmd("ps")
+#    cmd = serial.send_cmd("cmd")
 
 # Necessary packages
 import sys, traceback, time
