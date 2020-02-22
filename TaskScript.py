@@ -32,10 +32,7 @@ class TaskScript(object):
 
         return True
 
-    def run_task_1(self, bcm_port='xe2', scope_ctle='None'):
-        """
-           Test 1 Description: Sweep BCM TX FFE settings and read EH and EW from the scope.
-        """
+    def run_task_1(self):
         try:
             # _init_task 
             self._init_task(log_file_name="task_1_results",
